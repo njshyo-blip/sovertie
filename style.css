@@ -1,0 +1,227 @@
+/* Estilo simples da sorveteria */
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial;
+    margin: 10px;
+}
+
+.app {
+    width: 90%;
+    margin: auto;
+}
+
+/* Pedido */
+.customer {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.customer-art img {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.customer-info h2 {
+    font-size: 18px;
+}
+
+.request {
+    font-size: 14px;
+}
+
+.request-preview {
+    display: flex;
+    gap: 5px;
+}
+
+.mini-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.mini-cone {
+    width: 12px;
+    height: 18px;
+    background: #d7a36f;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* Parte de montar */
+.builder {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.work-area {
+    display: flex;
+    gap: 15px;
+}
+
+.icecream-stage {
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    width: 40%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.scoop-stack {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.scoop {
+    width: 60px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #777777;
+    margin-bottom: -10px;
+}
+
+.cone-shape {
+    width: 80px;
+    height: 100px;
+    background-color: #d9a46e;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.cone-shape.waffle {
+    background: repeating-linear-gradient(
+        45deg,
+        #c28a5b 0px,
+        #c28a5b 5px,
+        #e0b37d 5px,
+        #e0b37d 10px
+    );
+}
+
+.cone-shape.chocolate {
+    background-color: #8b5547;
+}
+
+/* Escolhas */
+.controls {
+    width: 60%;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group h3 {
+    font-size: 16px;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.choice {
+    background-color: #dddddd;
+    border: 1px solid #777777;
+    padding: 7px;
+    font-size: 13px;
+    margin: 2px;
+}
+
+.choice.selected {
+    background-color: #f2bcbc;
+    border: 2px solid #a94444;
+}
+
+.cone-icon {
+    display: inline-block;
+    width: 12px;
+    height: 18px;
+    background-color: #d9a46e;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.cone-icon.waffle {
+    background-color: #c28a5b;
+}
+
+.cone-icon.chocolate {
+    background-color: #8b5547;
+}
+
+.flavor-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.strawberry {
+    background-color: #f18b9a;
+}
+
+.cocoa {
+    background-color: #795044;
+}
+
+.vanilla {
+    background-color: #f4e4bd;
+}
+
+.pistachio {
+    background-color: #a8bb83;
+}
+
+.mint {
+    background-color: #8fc9b1;
+}
+
+/* Botão */
+.deliver {
+    background-color: #c96e73;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+.deliver:disabled {
+    background-color: #aaaaaa;
+}
+
+.feedback {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+    .work-area {
+        display: block;
+    }
+
+    .icecream-stage {
+        width: 100%;
+        min-height: 220px;
+        margin-bottom: 15px;
+    }
+
+    .controls {
+        width: 100%;
+    }
+
+    .customer-art img {
+        width: 70px;
+        height: 70px;
+    }
+}
